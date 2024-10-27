@@ -1,0 +1,48 @@
+{
+  "name": "@ileostar/tailwind-config",
+  "version": "0.0.1",
+  "description": "The Tailwind CSS configuration for LeoStar's projects",
+  "license": "MIT",
+  "author": "ileostar <hi@ileostar.top> (https://github.com/ileostar)",
+  "homepage": "https://github.com/ileostar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ileostar/tailwind-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ileostar/tailwind-config/issues"
+  },
+  "main": "tailwind.config.ts",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "tailwind-config"
+  ],
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit",
+    "release": "bumpp --commit --push --tag && npm publish"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.x"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.13.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
