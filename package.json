@@ -1,6 +1,6 @@
 {
   "name": "@ileostar/tailwind-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Tailwind CSS configuration for LeoStar's projects",
   "author": "ileostar <hi@ileostar.top> (https://github.com/ileostar)",
   "license": "MIT",
